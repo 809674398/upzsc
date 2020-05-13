@@ -33,18 +33,6 @@
 
     <repositories>
         <repository>
-            <id>zijinph-release</id>
-            <name>zijinph maven repository</name>
-            <url>http://repo.maven.zijinsuo.net/repository/zijinph-release/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <!--snapshots默认是关闭的,需要开启  -->
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
             <id>aliyun</id>
             <name>aliyun maven repository</name>
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
