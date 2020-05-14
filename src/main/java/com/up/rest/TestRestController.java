@@ -1,5 +1,7 @@
 package com.up.rest;
 
+import com.up.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,10 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/up")
 public class TestRestController {
 
+    @Autowired
+    private UserService userService;
+
 
     @GetMapping("/test")
     public String test(){
-        return "test second DDD !";
+        return userService.findAllUser();
     }
 
 }
