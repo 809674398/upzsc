@@ -17,7 +17,7 @@ public class TestRestController {
 
     @GetMapping("/test")
     public String test(){
-        return "test second !";
+        return "test second AAA !";
     }
 
 }
